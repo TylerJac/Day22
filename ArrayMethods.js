@@ -16,10 +16,9 @@ const loginRate = users
     .filter(user => user.logins> 10)
     .map(user => `${user.firstName} ${user.lastName}`);
 const totalLogins = users.reduce((total, user) => total + user.logins, 0);
-console.log(totalLogins);
 
-console.log(nameJose)
-console.log(isPremium)
-console.log(lastNames)
-console.log(loginRate)
+console.log(nameJose);
+console.log(isPremium);
+console.log(lastNames);
+console.log(loginRate);
 console.log(totalLogins)
