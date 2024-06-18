@@ -13,7 +13,7 @@ let photoSlideShow = {
         if (this.currentPhotoIndex < this.photoList.length - 1) {
             this.currentPhotoIndex++;
         } else {
-            this.currentPhotoIndex = 0;
+            return 'this is end of SlideShow'
         }
         return this.displayCurrentPhoto();
     },
@@ -29,5 +29,9 @@ let photoSlideShow = {
 };
 
 console.log(photoSlideShow.displayCurrentPhoto());
-console.log(photoSlideShow.nextPhoto());
+console.log(photoSlideShow.nextPhoto()); 
+console.log(photoSlideShow.nextPhoto()); 
+console.log(photoSlideShow.nextPhoto()); 
+console.log(photoSlideShow.prevPhoto()); 
+console.log(photoSlideShow.prevPhoto()); 
 console.log(photoSlideShow.prevPhoto());
